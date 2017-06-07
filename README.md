@@ -1,3 +1,3 @@
 # aureliacontactmanager
 
-!http://aureliacontactmanager.azurewebsites.net/
+http://aureliacontactmanager.azurewebsites.net/
