@@ -1,0 +1,20 @@
+<template>
+  <table class="table table-striped table-hover">
+    <thead>
+      <tr>
+        <th>last name</th>
+        <th>first name</th>
+        <th>email</th>
+        <th>#</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr repeat.for="contact of contacts">
+        <td>${contact.lastName}</td>
+        <td>${contact.firstName} </td>
+        <td>${contact.email}</td>
+        <td><a route-href="route: contact; params.bind: {id:contact.id}" click.delegate="$parent.select(contact)">edit</a></td>
+      </tr>
+    </tbody>
+  </table>
+</template>

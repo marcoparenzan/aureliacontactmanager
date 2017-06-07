@@ -1,0 +1,19 @@
+<template>
+  <require from="bootstrap/css/bootstrap.css"></require>
+  <require from="./styles.css"></require>
+  <div class="navbar-header">
+    <ol class="breadcrumb">
+      <li><a href="">Menu</a></li>
+      <li class="active">Contacts</li>
+    </ol>
+  </div>
+  </nav>
+
+  <loading-indicator loading.bind="router.isNavigating || api.isRequesting"></loading-indicator>
+
+  <div class="container">
+    <div class="row">
+      <router-view class="col-md-12"></router-view>
+    </div>
+  </div>
+</template>
